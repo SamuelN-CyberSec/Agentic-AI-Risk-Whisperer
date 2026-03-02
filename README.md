@@ -3,14 +3,14 @@ Agentic AI Risk Whisperer is an intelligent risk management system designed to e
 The system was built using Lovable for frontend interface development and CrewAI for backend agent orchestration and processing. RESTful APIs connect a structured database with predictive analytics modules to ensure seamless communication between user actions and AI-driven analysis.
 The most challenging aspect of development was ensuring consistent, structured outputs from multiple AI agents. This was resolved through iterative prompt refinement, controlled testing cycles, and the implementation of a clear role-based agent architecture that enforced output discipline.
 
-🖼️ System Interface
+#  System Interface
 <img width="932" height="437" alt="Screenshot 10000" src="https://github.com/user-attachments/assets/d3e77983-56a6-424d-ad7b-596a4a1dbcbd" />
 <img width="940" height="440" alt="Screenshot 20000" src="https://github.com/user-attachments/assets/c431d118-80fb-4df2-8a2f-b259d5289e09" />
 
 <img width="935" height="434" alt="Screenshot 3000" src="https://github.com/user-attachments/assets/72776287-502d-4716-a63d-f5bdfea5866f" />
 
 
-Architecture
+ #  Architecture
 The system follows a structured flow:
 •	Frontend: Built with Lovable for responsive UI and interaction handling
 •	Backend: CrewAI-powered agent orchestration
@@ -18,8 +18,8 @@ The system follows a structured flow:
 •	Database: Structured storage for risks and AI-generated assessments
 •	Analytics Layer: Predictive logic for risk scoring and classification
 
-How It Works 
-1. Dashboard Overview
+How It Works: 
+1. Dashboard Overview:
 The landing page provides a real-time snapshot of organizational risk posture:
 •	Metric Cards: Total risks, Active, Mitigating, and Resolved counts
 •	Risk Gauge: Overall risk score (0–10) with exposure level
@@ -36,7 +36,7 @@ Users can:
 •	Expand a row to view description, owner, updates, and mitigations
 This layer acts as the structured control center.
 
-3. AI Risk Evaluation (Evaluate Candidate)
+3. AI Risk Evaluation (Evaluate Candidate):
 This is the core intelligence engine.
 When Actions → Evaluate Candidate is clicked:
 Step	Process
@@ -46,7 +46,7 @@ Polling	Frontend polls every 3 seconds showing progress, elapsed time, and poll 
 Result	AI assessment appears inline within the risk row
 Persistence	Assessment is saved to the database for future access
 
-4. Data Flow
+4. Data Flow:
 User clicks Evaluate 
       ↓
 Edge Function (Kickoff)
@@ -59,16 +59,16 @@ Assessment returned
       ↓
 Result displayed & stored in database
 
-Current State
+Current State:
 •	The Risk Registry currently uses mock risk data
 •	The AI evaluation module is fully live and processes risks dynamically
 •	Results persist across sessions
 
-Key Challenge Solved
+Key Challenge Solved:
 Multi-agent systems often produce inconsistent outputs when not carefully constrained.
 This system enforces structured agent roles, defined output schemas, and refined prompts to guarantee consistent, reliable assessments suitable for enterprise use.
 
-Next Iteration
+Next Iteration:
 •	Make risk registry fully dynamic
 •	Connect to live enterprise data sources
 •	Implement predictive risk forecasting
