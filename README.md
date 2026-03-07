@@ -60,7 +60,7 @@ Assessment returned
 Result displayed & stored in database
 
 Current State:
-• useRisks.ts` performs real CRUD against your database (insert, update, delete, select)
+• useRisks.ts` performs real CRUD against  database (insert, update, delete, select)
 •  RLS policies scope data per authenticated user
 •  Risk registry fully dynamic
 •  AI evaluation results persist in the `evaluation_results` table via upsert
