@@ -60,16 +60,12 @@ Assessment returned
 Result displayed & stored in database
 
 Current State:
-•	The Risk Registry currently uses mock risk data
-•	The AI evaluation module is fully live and processes risks dynamically
-•	Results persist across sessions
-
-Key Challenge Solved:
-Multi-agent systems often produce inconsistent outputs when not carefully constrained.
-This system enforces structured agent roles, defined output schemas, and refined prompts to guarantee consistent, reliable assessments suitable for enterprise use.
+• useRisks.ts` performs real CRUD against your database (insert, update, delete, select)
+•  RLS policies scope data per authenticated user
+•  Risk registry fully dynamic
+•  AI evaluation results persist in the `evaluation_results` table via upsert
 
 Next Iteration:
-•	Make risk registry fully dynamic
 •	Connect to live enterprise data sources
 •	Implement predictive risk forecasting
 •	Add mitigation recommendation scoring
