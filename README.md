@@ -64,10 +64,11 @@ Current State:
 •  RLS policies scope data per authenticated user
 •  Risk registry fully dynamic
 •  AI evaluation results persist in the `evaluation_results` table via upsert
+• 	Predictive risk forecasting
+•	 Mitigation recommendation scoring
 
 Next Iteration:
 •	Connect to live enterprise data sources
-•	Implement predictive risk forecasting
-•	Add mitigation recommendation scoring
+
 
 #AgenticAI #EnterpriseAI  #RiskManagement  #CyberRisk  #RiskAnalytics  #BuildInPublic #TechInnovation
