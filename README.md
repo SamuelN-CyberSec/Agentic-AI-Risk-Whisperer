@@ -60,15 +60,22 @@ Assessment returned
 Result displayed & stored in database
 
 Current State:
-• useRisks.ts` performs real CRUD against  database (insert, update, delete, select)
+• Team workspaces with role-based access
+New workspace switcher in the header — every existing user got a "My Workspace" with all their risks migrated over
+Roles: Owner / Admin / Editor / Viewer with proper RLS enforcement (viewers can't edit, only admins can manage members, only owners can delete)
+Email invites via Resend with magic link → /invite/:token accept page
+Workspace settings page at /workspace/settings (Members · Activity · Compliance · General)
+• Audit trail
+New audit_logs table + DB trigger that auto-logs every risk create / update / delete with field-level diffs (old → new)
+Member invites and joins are also logged
+Timeline UI grouped by day, with actor name, action icon, and per-field changes
+Logs are immutable (no edit/delete policies
 •  RLS policies scope data per authenticated user
 •  Risk registry fully dynamic
-•  AI evaluation results persist in the `evaluation_results` table via upsert
 • 	Predictive risk forecasting
 •	 Mitigation recommendation scoring
 
 Next Iteration:
-•	Connect to live enterprise data sources
-
+•	Demo features
 
 #AgenticAI #EnterpriseAI  #RiskManagement  #CyberRisk  #RiskAnalytics  #BuildInPublic #TechInnovation
